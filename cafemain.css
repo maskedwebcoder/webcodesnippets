@@ -78,7 +78,7 @@ section.drop {
     font-size: 1em; /* keeps font size the default size proportionately including user-defined font size. */
 }
 #pspecial {    /*this is the special para formatting for the rest of the 2 words.*/
-    font-family: Georgia, sans-serif; /* "Casper Open SF", "Casablanca SF", "Candy Square BTN Striped", "Casablanca SF", "Casper Heavy SF", "Casper Light SF", "Casper Open SF", Georgia; */
+    font-family: Georgia, sans-serif;  
     color: #93bdcb;
     font-size: 1.2em;
     font-style: normal;
@@ -91,7 +91,7 @@ section.drop {
 #pspecial:first-letter {   /*drop cap first letter S of uper and pecials */
     color: #93bdcb;   /* cafe red chalk*/
     float: left;
-    font-family: Georgia, sans-serif; /* "Casper Open SF", "Casablanca SF", "Candy Square BTN Striped", "Casablanca SF", "Casper Heavy SF", "Casper Light SF", "Casper Open SF", Georgia; */   /* a serif-style looks nicer for initial letter. */
+    font-family: Georgia, sans-serif;
     font-size: 3.5em;
     font-style: italic;
     line-height: 50px;
@@ -115,11 +115,11 @@ h3 {
 }
 h4 {
     font-family: Arial, Helvetica;
-    font-size: 1em: /*Equal to base font size proportionately */
+    font-size: 1.5em: /*Equal to 150% base font size proportionately */
 }
 h5 {
     font-family: Arial, Helvetica;
-    font-size: 0.8em: /*80% of the base font size proportionately */
+    font-size: 1.3em: /*130% of the base font size proportionately */
 }
 blockquote
 {
@@ -154,7 +154,7 @@ img {
   @media only screen and (max-width: 650px)  {
 
   #pspecial {    /*this is the special para formatting for the rest of the 2 words.*/
-    font-family: Georgia, sans-serif; /* "Casper Open SF", "Casablanca SF", "Candy Square BTN Striped", "Casablanca SF", "Casper Heavy SF", "Casper Light SF", "Casper Open SF", Georgia; */
+    font-family: Georgia, sans-serif;
     color: #93bdcb;
     font-size: 1.2em;
     font-style: normal;
@@ -164,7 +164,7 @@ img {
 #pspecial:first-letter {   /*drop cap first letter S of uper and pecials */
     color: #93bdcb;   /* cafe red chalk*/
     float: left;
-    font-family: Georgia, Charcoal, sans-serif; /* "Casper Open SF", "Casablanca SF", "Candy Square BTN Striped", "Casablanca SF", "Casper Heavy SF", "Casper Light SF", "Casper Open SF", Georgia; */   /* a serif-style looks nicer for initial letter. */
+    font-family: Georgia, Charcoal, sans-serif;
     font-size: 3.5em;
     font-style: italic;
     line-height: 50px;
