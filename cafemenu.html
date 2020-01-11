@@ -1,0 +1,213 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="A range of adult and children's meals, breakfasts, sweet treats and healthy options. Serving barista style coffees, a selection of teas, luxury hot chocolates at the Community Cafe Rhosllangerchrugog, near Wrexham North Wales."><!--Use a description with the focus keywords to describe the site to search engines.-->
+<meta name="keywords" content="Cafe Menu, barista style coffees, Luxury hot chocolate, vegetrian breakfasts, breakfast specials, the community cafe Rhos, the community cafe Rhosllanerchrugog, cafe near me, cafe near Wrexham"> <!--Keywords meta name are not used for SEO though some others might still use them so it does no harm to put them in. keywords in this meta tag are ignored by Bing and Google search engines.-->
+<link rel="stylesheet" href="normalize.css" type="text/css"/> <!--first CSS in list-->
+<link rel="stylesheet" href="header.css" type="text/css"/>
+<link rel="stylesheet" href="cafemain.css" type="text/css"/>
+<link rel="stylesheet" href="imggallery.css" type="text/css"/>
+<link rel="stylesheet" href="menucontainers.css" type="text/css"/>
+<link rel="stylesheet" href="footer.css" type="text/css"/>
+<link rel="stylesheet" href="menu.css" type="text/css"/>
+ <script type="text/javascript" src="header.js"> </script>
+
+<title>The Community Cafe Menu</title>
+
+</head>
+<body>
+ <header> <nav class="nav"> <img src="cafe logo/Cafeshieldlogo.png" class="cafelogo">
+
+   <div id="mySidebar" class="sidebar">  <!--this is the hidden side bar that slides out-->
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+  <a href="index.html" class="nav-content" id="nav1">Home</a>
+   <a href="about.html" class="mlink">Mission Statement</a>
+ <a href="cafemenu.html" class="nav-content" aria-current="true">Cafe Menu</a>
+ <a href="inclusioncafe.html" class="nav-content">Inclusion</a>
+ <a href="volunteer.html" class="nav-content">Volunteering</a>
+ <a href="community.html" class="nav-content">Community</a>
+ <a href="contactform.php" class="nav-content" id="nav2">Contact</a>
+</div>
+
+<div id="main">
+  <button class="openbtn" onclick="openNav()">☰ Navigation</button>
+</div><!--end div for id main-->
+    </nav> </header>
+   <section id="cafename"><h1 id="cafename"> Cafe Menu</h1></section>
+  <section>
+    <div class="bodycontainer">
+
+     <!--Lightbox slideshow begin-->    <!--this section contained in menu.css file and header.js for script-->
+  <div class="row">
+  <div class="column">
+    <img src="Cafe photos/hotchoc2.jpg" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="Cafe photos/scones.jpg" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="Cafe photos/cappuccino.jpg" style="width:98%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="Cafe photos/Breakfast.jpg" style="width:98%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+  </div>
+   <div class="column">
+    <img src="cafe_photos_sml/smashed-avocado-on-toast.jpg" style="width:98%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+  </div>
+</div>
+  <!--this section contained in menu.css file-->
+<div id="myModal" class="modal">
+  <span class="close cursor" onclick="closeModal()">&times;</span>
+  <div class="modal-content">
+
+    <div class="mySlides">
+      <div class="numbertext">1 / 5</div>
+      <img src="Cafe photos/hotchoc2.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">2 / 5</div>
+      <img src="Cafe photos/scones.jpg" style="width:100%">
+    </div>
+    <div class="mySlides">
+      <div class="numbertext">3 / 5</div>
+      <img src="Cafe photos/cappuccino.jpg" style="width:95%">
+    </div>
+    <div class="mySlides">
+      <div class="numbertext">4 / 5</div>
+      <img src="Cafe photos/Breakfast.jpg" style="width:92%">
+    </div>
+    <div class="mySlides">
+      <div class="numbertext">5 / 5</div>
+      <img src="cafe_photos_sml/smashed-avocado-on-toast.jpg" style="width:92%">
+    </div>
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    <div class="caption-container">
+      <p id="caption"></p>
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="Cafe photos/hotchoc2.jpg" style="width:100%" onclick="currentSlide(1)" alt="Luxury Hot Chocolate">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="Cafe photos/scones.jpg" style="width:100%" onclick="currentSlide(2)" alt="Scones">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="Cafe photos/cappuccino.jpg" style="width:100%" onclick="currentSlide(3)" alt="Cappuccino">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="Cafe photos/Breakfast.jpg" style="width:100%" onclick="currentSlide(4)" alt="Breakfast">
+    </div>
+     <div class="column">
+      <img class="demo cursor" src="cafe_photos_sml/smashed-avocado-on-toast.jpg" style="width:100%" onclick="currentSlide(5)" alt="Breakfast">
+    </div>
+  </div>
+</div>
+<!-- <div class="spacer"> </div> -->
+ </section> <br>
+ <main class="menucontainer">
+          <div class="menucolhalf">
+            <p id="mtext">Breakfasts</p>
+            <p id="pwhite">All meals made to Order</p>
+            <div class="row">
+  <div class="column1">
+  <p id="pblue">5-item
+     Choose from...
+  </p>
+  <p id="pwhite">Sausage, Bacon, Egg, Hash-Brown
+ <br>Black Pudding, Beans, Tomatoes.</p>
+  <p id="pred">Toast 50p extra</p>
+  </div>
+            </div>
+  <div class="row">
+  <div class="column1">
+  <p id="pblue">Breakfast Bap</p>
+  <p id="pwhite">3Sausages, 2Bacon
+  <br>1Egg, Black Pudding</p>
+  </div>
+  </div>
+   <p id="pskew"> Try our Coffees...<br>Cappuccino, Latte, Espresso or Americano <br> or a luxury Hot Chocolate!</p>
+   </div> <!--end menucolhalf-->
+
+  <div class="menucolhalfrt">
+     <p id="mtext2">Served all day! </p>
+             <div class="row">
+  <div class="column2">
+  <p id="pblue">Breakfast Special</p>
+  <p id="pwhite">2Sausages, 2Bacon, 1Egg
+  <br>Black Pudding, Beans & Tomato,
+  <br>Hash-Brown, 2Toast </p>
+   </div>
+  </div>
+    <div class="column2">
+  <div class="row">
+   <p id="pblue">Veggie Breakfast </p>
+  <p id="pwhite">1Veggie Sausage, 2Eggs
+  <br>Mushrooms, Beans, Tomato,
+  <br>Hash-Brown, Toast</p>
+  <br>
+  <p id="pblue">Avocado with Egg </p>
+  <p id="pwhite">A smashed Avocado with egg<br>
+  on toast</p>
+  </div>
+  </div>
+  </div>
+  </main>
+  <br>
+  <section>    <!--this section contained in menu.css file and header.js file-->
+  <div class="tab">
+   <button class="tablinks" onclick="openCMenu(event, 'cafemenu', this, '#c8a8b3')" id="pwhitem" id="defaultOpen" id="cafemenu">Menu</button>
+   <button class="tablinks" onclick="openCMenu(event, 'cakes', this, '#B99A7E')" id="pwhitem">Cakes</button>
+   <button class="tablinks" onclick="openCMenu(event, 'coffees', this, '#b7aa56')" id="pwhitem">Coffees</button>
+   <button class="tablinks" onclick="openCMenu(event, 'breakfast', this, '#5a6fff')" id="pwhitem">Breakfast</button>
+ </div>
+   <!--this section contained in menu.css file-->
+ <div id="cafemenu" class="tabcontent">
+   <p>Our menu is updated according to the season. We have a range of children's and adult meals and seasonal dishes from soups to Shepherds Pie which are popular and sell fast! </p>
+ </div>
+ <div id="cakes" class="tabcontent">
+   <p>We offer a range of sweet treats and puddings depending on the season and availability. Our home-made scones are popular and sell out fast! Delicious on their own or with jam.</p>
+ </div>
+
+ <div id="coffees" class="tabcontent">
+   <p>Latte, Americano, Espresso or Cappuccino? the choice is yours. But... when you just want chocolate-comfort, our Luxury Hot Chocolate with whipped cream and marshmallow pieces hits the spot!. </p>
+ </div>
+ <div id="breakfast" class="tabcontent">
+   <p>Our range of all-day breakfasts are cooked to order. Breakfast baps are very popular, followed by the 5-item breakfast.
+<br>For a meat-free option we also do a Veggie Breakfast Special, and our new smashed avocado and egg on toast.</p>
+ </div>
+ <div class="spacer"></div>
+
+ </Section>
+ </div> <!--Closing Div for Container-->
+<footer class="footerdiv">
+   <section class="footergrid" id="f1">
+      <h4 class="h4text">Policies </h4>
+      <p class="ftext">
+          <ul class="ftext">
+<li><a href="https://www.rhoscommunitycafe.org/cookiepolicy.html" title="Cookie Policy Link">Cookie policy</a></li>
+<li><a href="https://privacypolicy.html" title="Privacy Policy Link">Privacy policy</a></li>
+    </ul>
+</p>
+<p id="desmark">created by afwebcreations</p>
+   </section>
+    <section class="footergrid" id="f2">
+       <h4 class="h4text">How are we doing?</h4>
+       <ul>
+    <li><p class="ftext"><a href="https://www.scoresonthedoors.org.uk/business/the-community-cafe-wrexham-wrexham-1147502.html" target="_new" title="Our Food Hygiene Rating">Scores on the doors</a></p></li>
+    <li><p class="ftext"><a href="https://www.tripadvisor.co.uk/Restaurant_Review-g7257585-d5037731-Reviews-The_Community_Cafe-Rhosllanerchrugog_Wrexham_County_North_Wales_Wales.html" target="_new" title="We're on Trip Advisor!">Trip Advisor</a></p></li>
+    <li><p class="ftext"><a href="https://www.google.co.uk/maps/place/The+Community+Cafe+Rhosllanerchrugog/@53.0092431,-3.05995,17z/data=!3m1!4b1!4m5!3m4!1s0x487ac7ffb4727d69:0x98944f6f1f8535e9!8m2!3d53.0092431!4d-3.0577613?hl=en" target="_new" title="We're on Google">Find us on Google</a></p></li>
+</ul>
+       <p class="ftext">&copy;&nbsp;The Community Cafe 2012-2019</p>
+
+   </section>
+    <section class="footergrid" id="f3">
+        <h4 class="h4text">Business Address</h4>
+        <p class="ftext">The Community Cafe,<br> Berlin House,<br> 46 Market Street, Rhosllanerchrugog. LL14 2HY<br>
+Tel: 01978 447477
+</p>
+   </section>
+ </footer>
+</body>
+</html>

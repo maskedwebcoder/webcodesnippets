@@ -1,0 +1,175 @@
+/*cafemain css file styling body, links, p, heading tags.  Pages with different styling for all but body tags use #id in this sheet e.g. #h1menu, #h2menu and so on.*/
+* {
+  box-sizing: border-box;        /*Chrome */
+  -moz-box-sizing: border-box; /*Mozilla/Firefox browser */
+  -webkit-box-sizing: border-box; /*safari, ie */
+}
+body {
+    background-color: #fcfcfc; /*default page background ' baby powder colour'*/
+    color: #22231A; /* font colour raisin black by default. P tag is the same. change p tag for different paragraph default or create separate p class / id for class or individual styles. */
+ font-family: Tahoma, Geneva, sans-serif;
+ font-size: 1em;
+ background-attachment: scroll;
+   background-image: url("Cafe photos/coffeeboard4.jpg");
+   background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.bodycontainer {
+    width: 100%;
+    margin: 0 auto;
+     background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+ a:link   /*change these link colours to contrast with the page/theme colours */
+{
+    color: #1b4695;
+    text-decoration: underline; /* ensure all links are underlined for accessibility rules */
+}
+
+a:visited
+{
+    color: #FA4A48;
+     text-decoration: underline;
+}
+
+a:active {
+    color: #BBBBBB;
+     text-decoration: none !important;
+}
+
+a:hover
+{
+    color: #a8805d;
+     text-decoration: underline;
+}
+
+p {
+    padding: 0;
+    color: #22231A; /* raisin black*/
+    font-family: Arial, Helvetica, sans-serif; /* set this for default text fonts. create class for separate font style for menu etc.*/
+}
+
+P.drop-cap:first-letter {     /*Copy and amend this to replicate the Super Specials small-board header chalk text with larger drop and alignment of rest of the two words. Also need a p.specials class for the rest of the words*/
+    /*font-size: 4.5em;
+    margin-top: .15em;
+    color: #93bdcb;   /* cafe lighter blue paint*/
+    float: left;
+    font-family: Georgia; /* a serif-style looks nicer for initial letter. */
+    font-size: 4.5em;
+    line-height: 60px;
+    padding-top: 2px; /* of the initial letter*/
+    padding-right: 10px;
+    padding-left: 3px;
+}
+section.drop {
+    width:300px;
+}
+
+/* menu paragraph color (override default P using id */
+#pmenu {
+    padding-left: 5px;
+    padding-right: 5px;
+    background-color: #272d2d; /*charlston green */
+    color: #F7F9F9; /*ghost-white or off-white if this contrast to background does not meet W3 AA accessibility for contrast then change this and/or background colour*/
+    font-size: 1em; /* keeps font size the default size proportionately including user-defined font size. */
+}
+#pspecial {    /*this is the special para formatting for the rest of the 2 words.*/
+    font-family: Georgia, sans-serif; /* "Casper Open SF", "Casablanca SF", "Candy Square BTN Striped", "Casablanca SF", "Casper Heavy SF", "Casper Light SF", "Casper Open SF", Georgia; */
+    color: #93bdcb;
+    font-size: 1.2em;
+    font-style: normal;
+    margin-top: 5px;
+    padding-top: 5px;
+    }
+    #alink  {
+     color: #f7f9f9;
+    }
+#pspecial:first-letter {   /*drop cap first letter S of uper and pecials */
+    color: #93bdcb;   /* cafe red chalk*/
+    float: left;
+    font-family: Georgia, sans-serif; /* "Casper Open SF", "Casablanca SF", "Candy Square BTN Striped", "Casablanca SF", "Casper Heavy SF", "Casper Light SF", "Casper Open SF", Georgia; */   /* a serif-style looks nicer for initial letter. */
+    font-size: 3.5em;
+    font-style: italic;
+    line-height: 50px;
+    padding-top: 6px; /* of the initial letter*/
+    padding-right: 8px;
+    padding-left: 5px;
+}
+
+h1 {
+    font-family: Arial, Helvetica;
+    font-size: 1.9em: /*190% of the base font size proportionately */
+}
+
+h2 {
+    font-family: Arial, Helvetica;
+    font-size: 1.87em: /*187% of the base font size proportionately */
+}
+h3 {
+    font-family: Arial, Helvetica;
+    font-size: 1.67em: /*167% of the base font size proportionately */
+}
+h4 {
+    font-family: Arial, Helvetica;
+    font-size: 1em: /*Equal to base font size proportionately */
+}
+h5 {
+    font-family: Arial, Helvetica;
+    font-size: 0.8em: /*80% of the base font size proportionately */
+}
+blockquote
+{
+    font-family: Arial, Helvetica;
+    color: #5b5b5b;
+    font-style: italic;
+}
+
+img {
+    width: 80%;
+    height: auto;
+    align-content: center;
+}
+
+ .spacer { height: 30px; }
+ .spacer2 { height: 80px; vertical-align: middle;}
+
+@media only screen and (min-width: 901px) {
+    .bodycontainer {
+    width: 900px;
+    margin: 0 auto;
+ }
+
+}
+
+@media only screen and (max-width: 900px) {
+    .bodycontainer {
+    width: 100%;
+    margin: 0 auto;
+}
+}
+  @media only screen and (max-width: 650px)  {
+
+  #pspecial {    /*this is the special para formatting for the rest of the 2 words.*/
+    font-family: Georgia, sans-serif; /* "Casper Open SF", "Casablanca SF", "Candy Square BTN Striped", "Casablanca SF", "Casper Heavy SF", "Casper Light SF", "Casper Open SF", Georgia; */
+    color: #93bdcb;
+    font-size: 1.2em;
+    font-style: normal;
+    margin-top: 5px;
+    padding-top: 3px;
+}
+#pspecial:first-letter {   /*drop cap first letter S of uper and pecials */
+    color: #93bdcb;   /* cafe red chalk*/
+    float: left;
+    font-family: Georgia, Charcoal, sans-serif; /* "Casper Open SF", "Casablanca SF", "Candy Square BTN Striped", "Casablanca SF", "Casper Heavy SF", "Casper Light SF", "Casper Open SF", Georgia; */   /* a serif-style looks nicer for initial letter. */
+    font-size: 3.5em;
+    font-style: italic;
+    line-height: 50px;
+    padding-top: 0px; /* of the initial letter*/
+    padding-right: 8px;
+    padding-left: 5px;
+}
+  }
