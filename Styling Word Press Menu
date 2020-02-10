@@ -1,0 +1,97 @@
+Step 1: in the Word Press dashboard, go to Appearance>Menu. Set up a Custom Menu and in the drop down 'Options' menu at the top of the dashboard screen, tick Classes and any other relevant options. 
+Step 3: In the Custom Menu links in the Menu list of items, you now see the  boxes you ticked. Expand the menu block to see these. In the Class box, give each menu item its own unique class name. e.g. aboutlnk.
+Step 4. Save the Word Press Menu.
+Step 5: In your Oxygen Builder (if using this) go to Manage> Stylesheets. on a page you are creating. 
+Step 6. Create a folder if you wish then Add a Style sheet to hold the following CSS.  This example CSS shows how the menu in the image is styled.
+ 
+
+/* Begin CSS for styling Word Press Menu tabs. Classes are the class names given in the Word Press Menu  */ 
+.aboutlnk {
+ width: 90px;
+  margin: 0 2px;
+  background-color: #5a6f9f;
+   border-top-left-radius: 0px;
+border-top-right-radius: 30px;
+  border-bottom-left-radius: 10px;
+-webkit-border-top-left-radius: 5px;
+-webkit-border-top-right-radius: 30px;
+ -webkit-border-bottom-left-radius: 10px;
+}
+.aboutlnk:hover {
+  opacity: 0.7;
+  transition: transform .3s;
+  transform: scale(1.1); 
+}
+.groupslnk {
+ width: 90px;
+  margin: 0 2px;
+  background-color: #2081c3 ; 
+    border-top-left-radius: 0px;
+border-top-right-radius: 30px;
+  border-bottom-left-radius: 10px;
+-webkit-border-top-left-radius: 5px;
+-webkit-border-top-right-radius: 30px;
+ -webkit-border-bottom-left-radius: 10px;
+}
+.groupslnk:hover {
+  opacity: 0.7;
+  transition: transform .3s;
+  transform: scale(1.1); 
+}
+
+.medialnk {
+  width: 90px;
+  margin: 0 2px;
+  background-color: #5a6fff ;
+     border-top-left-radius: 0px;
+border-top-right-radius: 30px;
+  border-bottom-left-radius: 10px;
+-webkit-border-top-left-radius: 5px;
+-webkit-border-top-right-radius: 30px;
+ -webkit-border-bottom-left-radius: 10px;
+}
+.medialnk:hover {
+  opacity: 0.7;
+  transition: transform .3s;
+  transform: scale(1.1); 
+}
+
+.contactlnk {
+  width: 90px;
+  margin: 0 2px;
+  background-color: #93bdcb ;
+     border-top-left-radius: 0px;
+border-top-right-radius: 30px;
+  border-bottom-left-radius: 10px;
+-webkit-border-top-left-radius: 5px;
+-webkit-border-top-right-radius: 30px;
+ -webkit-border-bottom-left-radius: 10px;
+}
+.contactlnk:hover {
+  opacity: 0.7;
+  transition: transform .3s;
+  transform: scale(1.1); 
+}
+.locationlnk {
+  width: 90px;
+  margin: 0 2px;
+  background-color: #E6E6E7;
+     border-top-left-radius: 0px;
+border-top-right-radius: 30px;
+  border-bottom-left-radius: 10px;
+-webkit-border-top-left-radius: 5px;
+-webkit-border-top-right-radius: 30px;
+ -webkit-border-bottom-left-radius: 10px;
+}
+.locationlnk:hover {
+  opacity: 0.7;
+  transition: transform .3s;
+  transform: scale(1.1); 
+}
+
+@media only screen and (min-width: 992px) {
+  #nav_hwcmenu {
+background-image: ; none; /* I wanted to hide the image above 992 Because some of the image shows up behind the styled tabs in the menu container. */    
+}
+
+/* End Css for styling tabs */ 
