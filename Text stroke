@@ -1,0 +1,41 @@
+/*Use @supports in browser which support text stroke with webkit:
+*/
+@supports (-webkit-text-stroke: 1px black) {
+  h1 {
+    -webkit-text-stroke: 1px black;
+    -webkit-text-fill-color: white;
+  }
+}
+/*Or combine with a shadow:*/
+h1 {
+   -webkit-text-stroke: 1px black;
+   color: white;
+   text-shadow:
+       3px 3px 0 #000,
+     -1px -1px 0 #000,  
+      1px -1px 0 #000,
+      -1px 1px 0 #000,
+       1px 1px 0 #000;
+}
+
+/*One possibility is this:*/
+
+h1 {
+  color: black;
+  -webkit-text-fill-color: white; /* Will override color (regardless of order) */
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+}
+
+/*OR use simulation without webkit: 
+Simulation
+We can take this a bit further by not relying on the WebKit proprietary entirely. We can use the text-shadow property (supported in Firefox, Opera, and IE 10 as well)
+*/
+h1 {
+  color: white;
+  text-shadow:
+   -1px -1px 0 #000,  
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+     1px 1px 0 #000;
+}
