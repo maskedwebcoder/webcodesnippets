@@ -1,0 +1,109 @@
+/*Start code for styling Wordpress menu links in navmenu give the WP menu items the class of navmenuitem and the menu block as navmenu */
+.navmenu {
+  width: 100%;
+  display: block;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 0 0 0 0;
+ 
+}
+.menuitem {
+ background-color: #f2f1d0;
+  width: 120px;
+  padding: 3px 3px 3px 3px;
+  margin-right: 10px;
+  border-top: solid 2px #35051a;
+  align-items: center;
+  -moz-border-top-left-radius: 20px ;
+  -moz-border-top-right-radius: 20px ;
+  -o-border-top-left-radius:20px  ;
+  -o-border-top-right-radius:20px  ;
+  -webkit-border-top-left-radius:20px  ;
+  -webkit-border-top-right-radius: 20px  ;
+  border-top-left-radius: 20px ;
+  border-top-right-radius: 20px;
+  
+  
+}
+.menuitem:hover {
+  opacity: 0.8;
+  /*background-color: rgba(107,107,181,0.56);*/
+  background-color: rgba(255,255,255,0.56);
+  
+}
+
+.oxy-nav-menu-hamburger-line{display:none}
+
+.oxy-nav-menu:not(.oxy-nav-menu-open) .oxy-nav-menu-hamburger
+
+{
+background-image:url("../wp-content/uploads/2020/03/NavLogoOpen.png");
+background-size: 80%;
+background-repeat: no-repeat;
+background-position: center;
+}
+ 
+/*Begin code to change the close lines.*/
+
+/*code_burgermenu {
+display: none;  if you want to hide the code block 
+}*/
+
+.oxy-nav-menu-open .oxy-nav-menu-hamburger .oxy-nav-menu-hamburger-line {
+display: none; /*hide the second (middle) burger menu line */
+}
+.oxy-nav-menu-open
+.oxy-nav-menu-hamburger
+.oxy-nav-menu-hamburger-line:first-child {
+display: none; /* Remove the first transform: rotate(45deg); /*diagonal line */
+
+}
+.oxy-nav-menu-open
+.oxy-nav-menu-hamburger
+.oxy-nav-menu-hamburger-line:last-child {
+display: none; /* Remove the third transform: rotate(45deg); /*diagonal line */
+
+}
+
+.oxy-nav-menu-open .oxy-nav-menu-hamburger {
+transform: rotate(0deg);/*To reset the 45 deg rotate in Oxygen CSS sheet */
+position: absolute;
+top: 30px; /* position height from top default is 20px */
+right: 30px; /* position anywhere from or replace right with left default is 20px */
+z-index: 99999;
+background-image:url("../wp-content/uploads/2020/03/NavLogoClose.png");
+background-size: 80%;
+background-repeat: no-repeat;
+background-position: center;
+}
+
+@media only screen and (max-width: 992px) {
+#nav_menu {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+  }
+  
+.menuitem {
+  margin: 15px auto;
+  border-top: solid 2px #35051a;
+  -moz-border-top-left-radius: 20px ;
+  -moz-border-top-right-radius: 20px ;
+  -o-border-top-left-radius:20px  ;
+  -o-border-top-right-radius:20px  ;
+  -webkit-border-top-left-radius:20px  ;
+  -webkit-border-top-right-radius: 20px  ;
+  border-top-left-radius: 20px ;
+  border-top-right-radius: 20px;
+  
+ }
+ .oxy-nav-menu-open .menuitem {
+   justify-content: center;
+   align-content: center;
+   align-items: center;
+   border-radius: 0;
+ }
+  
+}
+/*End my code to change the close lines */
