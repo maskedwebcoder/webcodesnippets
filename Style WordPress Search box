@@ -1,0 +1,35 @@
+.oxy-search-form input#searchsubmit {
+ background-color: #888888;
+}
+.oxy-search-form {
+  width: auto;
+  text-align: left;
+  padding-left: 10px;
+  
+}
+.oxy-search-form input {
+ background-image: url('https://www.yoursite.com/...magglasssml.png') ;//if you want a background image.
+  background-repeat: no-repeat;
+  background-position: 5px 50%;
+  padding: 8px auto;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 1px solid #111111;
+  border-radius: 5px;
+  outline: none;
+  width: 70px
+ 
+}
+
+/*input[type=text] {   } Can use this to target any/all textboxes on a page*/
+
+.oxy-search-form input:hover {
+ /* code for hover here */
+   pointer: cursor;
+}
+.oxy-search-form input:focus {
+  width: auto;
+   background-color: #f8f8f8;
+  resize: none; //remove the resize corner
+  
+}
