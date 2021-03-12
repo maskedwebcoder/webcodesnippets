@@ -1,0 +1,29 @@
+/*The following CSS gives a gradient background colour to text. */
+
+    h1 { 
+        font-size: 40px; 
+        font-family: Arial,  
+            Helvetica, sans-serif; 
+        background: linear-gradient( 
+            to right, #f32170, #ff6b08, 
+             #cf23cf, #eedd44); 
+        -webkit-text-fill-color: transparent; 
+        -webkit-background-clip: text; 
+    } 
+    
+    /*Metal Color pallette*/
+#headline-metal {
+  background: linear-gradient( 
+            to right, #8a281c, #ca3d23, #101010, #53626d, #5c4746, #101010, #ca3d23 ); 
+        -webkit-text-fill-color: transparent; 
+        -webkit-background-clip: text; 
+}
+
+/*Pop-Punk Colour Palette*/
+
+#headline-poppunk {
+  background: linear-gradient( 
+            to right, #B92056, #E85627, #F0B54D, #682957, #67B9A9, #2B5983, #2B5983); 
+        -webkit-text-fill-color: transparent; 
+        -webkit-background-clip: text; 
+}
